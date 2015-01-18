@@ -81,13 +81,16 @@
                 <p>
                     <?php
                         
-                        echo "test";
+                        echo $goal1;
                      ?>
                 </p>
                     </h2>
                 
                 <p>
-                    Donec id elit non mi porta gravida at eget metus.
+                    <?php
+                        
+                        echo $goal1info;
+                     ?>
                 </p>
                 
             </div>
@@ -98,14 +101,19 @@
                 <h3>Goal #2 </h3>
                 <h2>
                 <p>
-                    Donec id elit non mi porta gravida at eget metus.
+                    <?php
+                        
+                        echo $goal2;
+                     ?>
                 </p>
                     </h2>
                 
                 <p>
-                    Donec id elit non mi porta gravida at eget metus.
+                    <?php
+                        
+                        echo $goal2info;
+                     ?>
                 </p>
-                
             </div>
             
             
@@ -114,12 +122,18 @@
                 <h3>Goal #3 </h3>
                 <h2>
                 <p>
-                    Donec id elit non mi porta gravida at eget metus.
+                    <?php
+                        
+                        echo $goal3;
+                     ?>
                 </p>
-                    </h2>  
+                    </h2>
                 
                 <p>
-                    Donec id elit non mi porta gravida at eget metus.
+                    <?php
+                        
+                        echo $goal3info;
+                     ?>
                 </p>
             </div>
             
