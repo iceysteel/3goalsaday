@@ -1,19 +1,5 @@
 <?php
 
-//this function takes a varible and feild and puts var into the mysql feild
-function putsql($var, $field)
-{
-    $sql = "INSERT INTO goals ($field)
-    VALUES ('".$var."')";
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-}
-
-
-
 //code for connecting to mysql server
 $servername = "localhost";
 $username = "root";
@@ -25,6 +11,18 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 mysqli_select_db($conn,"3goals");
+
+//this function takes a varible and feild and puts var into the mysql feild
+function putsql($var, $field)
+{
+    $sql = "INSERT INTO goals ($field)
+    VALUES ('".$var."')";
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
 
 //code to decide what gets put into the sql database
 if (isset($_POST['goal1submit']))
