@@ -218,6 +218,7 @@
         </div>
     </div>
     
+<?php include 'setgoals.php'; ?>    
     
     </section>
         
