@@ -161,11 +161,11 @@
                         </p>
                     <div class="form-group">
                         <label>Goal 1</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal1form">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="goal1form">
                     </div>
                     <div class="form-group">
                         <label>Extra information</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal1infoform">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="goal1infoform">
                     </div>
                     <button type="submit" class="btn btn-default" name="goal1submit">Submit</button>
                 </form>
@@ -179,11 +179,11 @@
                         </p>
                     <div class="form-group">
                         <label>Goal 2</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal2form">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="goal2form">
                     </div>
                     <div class="form-group">
                         <label>Extra information</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal2infoform">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="goal2infoform">
                     </div>
                     <button type="submit" class="btn btn-default" name="goal2submit">Submit</button>
                 </form>
@@ -198,11 +198,11 @@
                         </p>
                     <div class="form-group">
                         <label>Goal 3</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal3form">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="goal3form">
                     </div>
                     <div class="form-group">
                         <label>Extra information</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal3infoform">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="goal3infoform">
                     </div>
                     <button type="submit" class="btn btn-default" name="goal3submit">Submit</button>
                 </form>
