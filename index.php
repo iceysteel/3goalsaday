@@ -155,56 +155,56 @@
         <div class="row clearfix">
             
             <div class="col-md-4 column">
-                <form role="form">
+                <form role="form" action="setgoals.php" method="POST">
                     <p class="help-block">
                             Enter Goal #1's details below
                         </p>
                     <div class="form-group">
                         <label>Goal 1</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal1form">
                     </div>
                     <div class="form-group">
                         <label>Extra information</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal1infoform">
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default" name="goal1submit">Submit</button>
                 </form>
             </div>
             
             
             <div class="col-md-4 column">
-                <form role="form">
+                <form role="form" action="setgoals.php" method="POST">
                     <p class="help-block">
                             Enter Goal #2's details below
                         </p>
                     <div class="form-group">
                         <label>Goal 2</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal2form">
                     </div>
                     <div class="form-group">
                         <label>Extra information</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal2infoform">
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default" name="goal2submit">Submit</button>
                 </form>
             </div>
             
             
             
             <div class="col-md-4 column">
-                <form role="form">
+                <form role="form" action="setgoals.php" method="POST">
                     <p class="help-block">
                             Enter Goal #3's details below
                         </p>
                     <div class="form-group">
                         <label>Goal 3</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal3form">
                     </div>
                     <div class="form-group">
                         <label>Extra information</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="goal3infoform">
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default" name="goal3submit">Submit</button>
                 </form>
             </div>
 
