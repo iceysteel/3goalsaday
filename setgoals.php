@@ -17,7 +17,7 @@ function putsql($var, $field, $conn)
 {
     $sql = "INSERT INTO goals ('".$field."')
     VALUES ('".$var."')";
-    if (global $conn->query($sql) === TRUE) {
+    if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
