@@ -13,11 +13,11 @@ if ($conn->connect_error) {
 mysqli_select_db($conn,"3goals");
 
 //this function takes a varible and feild and puts var into the mysql feild
-function putsql($var, $field)
+function putsql($var, $field, $conn)
 {
-    $sql = "INSERT INTO goals ($field)
+    $sql = "INSERT INTO goals ('"$field"')
     VALUES ('".$var."')";
-    if ($conn->query($sql) === TRUE) {
+    if (global $conn->query($sql) === TRUE) {
         echo "New record created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
@@ -28,8 +28,8 @@ function putsql($var, $field)
 if (isset($_POST['goal1submit']))
   {
   // Execute this code if the submit button is pressed.
-    putsql($_POST['goal1form'], 'goal1');
-    putsql($_POST['goal1infoform'], 'goal1info');
+    putsql($_POST['goal1form'], 'goal1', $conn);
+    putsql($_POST['goal1infoform'], 'goal1info', $conn);
   }
 
 if (isset($_POST['goal2submit']))
