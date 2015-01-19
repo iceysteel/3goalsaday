@@ -46,5 +46,5 @@ if (isset($_POST['goal3submit']))
     $goal3info = $_POST['goal3infoform'];
   }
 
-    include 'refresh.php';
+    //include 'refresh.php';
 ?>
