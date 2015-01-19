@@ -35,16 +35,16 @@ if (isset($_POST['goal1submit']))
 if (isset($_POST['goal2submit']))
   {
   // Execute this code if the submit button is pressed.
-    $goal2 = $_POST['goal2form'];
-    $goal2info = $_POST['goal2infoform'];
+    putsql($_POST['goal2form'], 'goal2', $conn);
+    putsql($_POST['goal2infoform'], 'goal2info', $conn);
   }
 
 if (isset($_POST['goal3submit']))
   {
   // Execute this code if the submit button is pressed.
-    $goal3 = $_POST['goal3form'];
-    $goal3info = $_POST['goal3infoform'];
+    putsql($_POST['goal3form'], 'goal3', $conn);
+    putsql($_POST['goal3infoform'], 'goal3info', $conn);
   }
 
-    //include 'refresh.php';
+    include 'refresh.php';
 ?>
