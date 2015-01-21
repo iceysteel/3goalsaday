@@ -98,7 +98,7 @@
     }*/
 
     
-    $sql = "SELECT goal1 FROM goals ORDER BY column_name DESC LIMIT 1";
+    $sql = "SELECT goal1 FROM goals ORDER BY goal1 DESC LIMIT 1";
     $result = $conn->query($sql);
     $goal1 = $result;
 
