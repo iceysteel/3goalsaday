@@ -137,26 +137,27 @@
         
         <div class="row clearfix">
             <div class="col-md-4 column">
-                
-                <h3>Goal #1 </h3>
-                <h2>
-                <p>
-                    <?php
-                        
-                        echo $goal1;
-                     ?>
-                </p>
-                    </h2>
-                
-                <p>
-                    <?php
-                        
-                        echo $goal1info;
-                     ?>
-                </p>
-                
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Goal #1 </h3>
+                    </div>
+                    <div class="panel-body">
+                        <h2>
+                        <p>
+                              <?php echo $goal1; ?>
+                            </p>
+                            </h2>
+
+                        <p>
+                            <?php echo $goal1info; ?>
+                        </p>
+
+                    </div>
+                </div>
+
             </div>
-            
+
             
             <div class="col-md-4 column">
                 
