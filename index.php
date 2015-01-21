@@ -113,6 +113,22 @@
     $goal3row = $result->fetch_assoc();
     $goal3 = $goal3row["goal3"];
 
+    //get goalinfo 1
+    $sql = "SELECT goal1info FROM goals ORDER BY goal1info DESC LIMIT 1";
+    $result = $conn->query($sql);
+    $goal1inforow = $result->fetch_assoc();
+    $goal1info = $goal1inforow["goal1info"];
+    //get goalinfo 2
+    $sql = "SELECT goal2info FROM goals ORDER BY goal2info DESC LIMIT 1";
+    $result = $conn->query($sql);
+    $goal2inforow = $result->fetch_assoc();
+    $goal2info = $goal2inforow["goal2info"];
+    //get goalinfo 3
+    $sql = "SELECT goal3info FROM goals ORDER BY goal3info DESC LIMIT 1";
+    $result = $conn->query($sql);
+    $goal3inforow = $result->fetch_assoc();
+    $goal3info = $goal3inforow["goal3info"];
+
     
 
     $conn->close();
