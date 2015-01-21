@@ -101,7 +101,7 @@
     $sql = "SELECT goal1 FROM goals ORDER BY goal1 DESC LIMIT 1";
     $result = $conn->query($sql);
     $goal1row = $result->fetch_assoc();
-    $goal1 = $goal1row["goal1"]
+    $goal1 = $goal1row["goal1"];
 
     $conn->close();
 ?>
