@@ -98,7 +98,7 @@
     }*/
 
     //get goal 1
-    $sql = "SELECT goal1 FROM goalss ORDER BY timestamp ASC LIMIT 1";
+    $sql = "SELECT goal1 FROM goalss ORDER BY timestamp DESC LIMIT 1";
     $result = $conn->query($sql);
     $goal1row = $result->fetch_assoc();
     $goal1 = $goal1row["goal1"];
