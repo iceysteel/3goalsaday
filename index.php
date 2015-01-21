@@ -160,44 +160,48 @@
 
             
             <div class="col-md-4 column">
-                
-                <h3>Goal #2 </h3>
-                <h2>
-                <p>
-                    <?php
-                        
-                        echo $goal2;
-                     ?>
-                </p>
-                    </h2>
-                
-                <p>
-                    <?php
-                        
-                        echo $goal2info;
-                     ?>
-                </p>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Goal #2 </h3>
+                    </div>
+                    <div class="panel-body">
+                        <h2>
+                        <p>
+                              <?php echo $goal2; ?>
+                            </p>
+                            </h2>
+
+                        <p>
+                            <?php echo $goal2info; ?>
+                        </p>
+
+                    </div>
+                </div>
+
             </div>
             
             
             <div class="col-md-4 column">
-                
-                <h3>Goal #3 </h3>
-                <h2>
-                <p>
-                    <?php
-                        
-                        echo $goal3;
-                     ?>
-                </p>
-                    </h2>
-                
-                <p>
-                    <?php
-                        
-                        echo $goal3info;
-                     ?>
-                </p>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Goal #3 </h3>
+                    </div>
+                    <div class="panel-body">
+                        <h2>
+                        <p>
+                              <?php echo $goal3; ?>
+                            </p>
+                            </h2>
+
+                        <p>
+                            <?php echo $goal3info; ?>
+                        </p>
+
+                    </div>
+                </div>
+
             </div>
             
         </div>
