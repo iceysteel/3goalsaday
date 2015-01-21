@@ -85,18 +85,19 @@
         die("Connection failed: " . $conn->connect_error);
     } 
 
-/*    $sql = "SELECT id, firstname, lastname FROM goals";
+    $sql = "SELECT goal1, goal2, goal3 FROM goalss";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
-            echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+            echo "id: " . $row["goal1"]. " - Name: " . $row["goal2"]. " " . $row["goal3"]. "<br>";
         }
     } else {
         echo "0 results";
-    }*/
+    }
 
+    /*
     //get goal 1
     $sql = "SELECT goal1 FROM goalss ORDER BY goal1 ASC LIMIT 1";
     $result = $conn->query($sql);
@@ -128,6 +129,7 @@
     $result = $conn->query($sql);
     $goal3inforow = $result->fetch_assoc();
     $goal3info = $goal3inforow["goal3info"];
+    */
 
     
 
