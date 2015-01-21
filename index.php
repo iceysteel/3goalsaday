@@ -98,7 +98,7 @@
     }*/
 
     //get goal 1
-    $sql = "SELECT goal1 FROM goalss ORDER BY g_id DESC";
+    $sql = "SELECT goal1 FROM goalss ORDER BY g_id DESC LIMIT *";
     $result = $conn->query($sql);
     $goal1row = $result->fetch_assoc();
     $goal1 = $goal1row["goal1"];
