@@ -15,7 +15,7 @@ mysqli_select_db($conn,"3goals");
 //this function takes a varible and feild and puts var into the mysql feild
 function putsql($var, $field, $conn)
 {
-    $sql = "INSERT INTO ".$feild." (".$field."text)
+    $sql = "INSERT INTO ".$field." (".$field."text)
     VALUES ('".$var."')";
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
@@ -46,5 +46,5 @@ if (isset($_POST['goal3submit']))
     putsql($_POST['goal3infoform'], 'goal3info', $conn);
   }
 
-    //include 'refresh.php';
+    include 'refresh.php';
 ?>
