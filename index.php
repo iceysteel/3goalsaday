@@ -85,7 +85,7 @@
         die("Connection failed: " . $conn->connect_error);
     } 
 
-    $sql = "SELECT goal1, goal2, goal3 FROM goalss";
+/*    $sql = "SELECT goal1, goal2, goal3 FROM goalss";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -95,24 +95,24 @@
         }
     } else {
         echo "0 results";
-    }
+    }*/
 
-    /*
+    
     //get goal 1
-    $sql = "SELECT goal1 FROM goalss ORDER BY goal1 ASC LIMIT 1";
+    $sql = "SELECT goal1text FROM goal1 ORDER BY goal1text ASC LIMIT 1";
     $result = $conn->query($sql);
     $goal1row = $result->fetch_assoc();
-    $goal1 = $goal1row["goal1"];
+    $goal1 = $goal1row["goal1text"];
     //get goal 2
-    $sql = "SELECT goal2 FROM goalss ORDER BY goal2 ASC LIMIT 1";
+    $sql = "SELECT goal2text FROM goal2 ORDER BY goal2text ASC LIMIT 1";
     $result = $conn->query($sql);
     $goal2row = $result->fetch_assoc();
-    $goal2 = $goal2row["goal2"];
+    $goal2 = $goal2row["goal2text"];
     //get goal 3
-    $sql = "SELECT goal3 FROM goalss ORDER BY goal3 DESC LIMIT 1";
+    $sql = "SELECT goal3text FROM goal3 ORDER BY goal3text DESC LIMIT 1";
     $result = $conn->query($sql);
     $goal3row = $result->fetch_assoc();
-    $goal3 = $goal3row["goal3"];
+    $goal3 = $goal3row["goal3text"];
 
     //get goalinfo 1
     $sql = "SELECT goal1info FROM goalss ORDER BY goal1info ASC LIMIT 1";
@@ -129,7 +129,7 @@
     $result = $conn->query($sql);
     $goal3inforow = $result->fetch_assoc();
     $goal3info = $goal3inforow["goal3info"];
-    */
+    
 
     
 
