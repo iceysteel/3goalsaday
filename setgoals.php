@@ -43,5 +43,5 @@ if (isset($_POST['goal3submit']))
     putsql($_POST['goal3form'], $_POST['goal3infoform'], 'goal3', $conn);
   }
 
-    //include 'refresh.php';
+    include 'refresh.php';
 ?>

@@ -296,7 +296,7 @@
         <div class="row">
         <div class="col-lg-12">
             <ul class="nav nav-pills nav-justified">
-                <li><a href="http://www.clevrly.me">©2015 Zain Munad</a></li>
+                <li><a href="http://www.clevrly.me">©2015 created by Zain Munad for Zain Munad</a></li>
 
             </ul>
         </div>
