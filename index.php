@@ -99,7 +99,7 @@
 
     
     //get goal 1
-    $sql = "SELECT goal1text,goal1infotext FROM goal1 ORDER BY goal1text ASC LIMIT 1";
+    $sql = "SELECT goal1text,goal1infotext FROM goal1 ORDER BY time ASC LIMIT 1";
     $result = $conn->query($sql);
     $goal1row = $result->fetch_assoc();
     $goal1 = $goal1row["goal1text"];
