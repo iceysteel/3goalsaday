@@ -99,10 +99,11 @@
 
     
     //get goal 1
-    $sql = "SELECT goal1text FROM goal1 ORDER BY goal1text ASC LIMIT 1";
+    $sql = "SELECT goal1text,goal1infotext FROM goal1 ORDER BY goal1text ASC LIMIT 1";
     $result = $conn->query($sql);
     $goal1row = $result->fetch_assoc();
     $goal1 = $goal1row["goal1text"];
+    $goal1info = $goal1row["goal1infotext"];
     //get goal 2
     $sql = "SELECT goal2text FROM goal2 ORDER BY goal2text ASC LIMIT 1";
     $result = $conn->query($sql);
@@ -114,11 +115,12 @@
     $goal3row = $result->fetch_assoc();
     $goal3 = $goal3row["goal3text"];
 
+    /*
     //get goalinfo 1
     $sql = "SELECT goal1infotext FROM goal1 ORDER BY goal1infotext ASC LIMIT 1";
     $result = $conn->query($sql);
     $goal1row = $result->fetch_assoc();
-    $goal1info = $goal1row["goal1infotext"];
+    
     //get goalinfo 2
     $sql = "SELECT goal2infotext FROM goal2 ORDER BY goal2infotext ASC LIMIT 1";
     $result = $conn->query($sql);
@@ -129,6 +131,7 @@
     $result = $conn->query($sql);
     $goal1row = $result->fetch_assoc();
     $goal3info = $goal1row["goal3infotext"];
+    */
     
 
     
